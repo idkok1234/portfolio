@@ -19,10 +19,18 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin-left: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-text p {
@@ -68,6 +76,7 @@ body {
 .icons {
     display: flex;
     column-gap: 25px;
+    margin-top: 100px;
 }
 
 .icon {
@@ -104,24 +113,11 @@ body {
 }
 
 .icon--github:hover {
-    background-color: #2ea44f;
-    outline-color: #2ea44f;
+    background-color: #2e8aa4;
+    outline-color: #2e98a4;
 }
 
-@keyframes shake {
-    10% {
-        transform: rotate(15deg);
-    }
-
-    20% {
-        transform: rotate(-15deg);
-    }
-
-    30% {
-        transform: rotate(15deg);
-    }
-
-    40% {
-        transform: rotate(-15deg);
-    }
+.icon--spotify:hover {
+    background-color: #1ED760;
+    outline-color: #1ED760;
 }
